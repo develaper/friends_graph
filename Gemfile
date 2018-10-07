@@ -33,6 +33,8 @@ gem 'jbuilder', '~> 2.5'
 
 # Pure Ruby GeoIP2 MaxMind DB reader, which doesn't require libmaxminddb.
 gem 'maxminddb'
+#Provides object geocoding and calculates the geo distance between two locations using longitude and latitude using Haversine formula.
+gem 'geocoder', '~> 1.5'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
