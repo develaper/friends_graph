@@ -1,4 +1,4 @@
-class FriendshipValidator
+class FriendshipValidatorService
 
   def initializer()
   end
