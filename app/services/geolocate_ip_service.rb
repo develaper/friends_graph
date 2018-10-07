@@ -1,7 +1,6 @@
-module Geolocable
-  extend ActiveSupport::Concern
+class GeolocateIpService
 
-  def geolocate_ip
+  def geolocate_ip (ip)
     geolite_file = File.join(Rails.root, 'app', 'assets', 'GeoLite2', 'GeoLite2-City.mmdb')
     db = MaxMindDB.new(geolite_file)
     ret = db.lookup( ip )
