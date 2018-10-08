@@ -4,5 +4,5 @@ class User
   property :name, type: String
   property :ip, type: String
 
-  has_many :both, :friends, type: :FRIENDSHIP, model_class: :User
+  has_many :both, :friends, rel_class: :Friendship, model_class: :User
 end
