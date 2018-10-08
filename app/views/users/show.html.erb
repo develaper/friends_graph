@@ -6,6 +6,11 @@
 </p>
 
 <p>
+  <strong>Ip:</strong>
+  <%= @user.ip %>
+</p>
+
+<p>
   <strong>Friends:</strong>
   <%= @user.friends.map(&:name).to_sentence %>
 </p>
